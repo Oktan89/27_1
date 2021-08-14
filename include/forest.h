@@ -1,21 +1,20 @@
 #pragma once
 #include <vector>
 
-class Tree;
-
-class House;
-
 class Forest
 {
     //количество деревьев
     int _size{0};
     //Указатель на массив деревьев
-    Tree* _tree = nullptr;
-    std::vector<House*> _home;
+    class Tree* _tree = nullptr;
+    //указатели на все созданные дома
+    std::vector<class House*> _home;
     void setHouse();
+    int numberOFneighbors(struct Address& address);
 public:
     Forest(int size = 5);
     ~Forest();
-    
+    void setNameElf();
     void printElfName();
+    void findElf(const std::string& name);
 };
