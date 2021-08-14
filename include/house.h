@@ -1,16 +1,16 @@
 #pragma once
 #include <string>
 
-class Bigbranch;
 
 class House
 {
-    const std::string _nameElf{"none"};
-    const Bigbranch *_myBranch{nullptr};
-
+    const std::string _nameElf = "none";
+    
 public:
-    House(Bigbranch *myBranch, const std::string &nameElf);
+    House();
+    ~House();
     //Количество соседей
     int numberOFneighbors();
     const char *getNameElf();
+    House* getHouse();
 };

@@ -4,6 +4,7 @@
 int main()
 {
     Forest test(5);
-    test.Print();
+
+    test.printElfName();
     return 0;
 }

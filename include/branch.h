@@ -1,8 +1,10 @@
 #pragma once
+#include "house.h"
 
-class House;
-
-class Branch
+class Branch : public House
 {
-
+    House* _house = nullptr;
+public:
+    Branch();
+    ~Branch();
 };
