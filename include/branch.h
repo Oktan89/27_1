@@ -3,7 +3,7 @@
 
 class Branch : public House
 {
-    House* _house = nullptr;
+   // House* _house = nullptr;
 public:
     Branch();
     ~Branch();

@@ -7,7 +7,7 @@ class Bigbranch : public House
 {
     int _colbranch{0};
     Branch* _branch = nullptr;
-    House* _house = nullptr;
+    //House* _house = nullptr;
 public:
     Bigbranch();
     ~Bigbranch();

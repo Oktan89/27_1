@@ -4,12 +4,12 @@
 Branch::Branch()
 {
 
-    _house = new House();
+  //  _house = new House();
 }
 
 Branch::~Branch()
 {
 
-    delete _house;
+  //  delete _house;
 }
 

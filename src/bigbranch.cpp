@@ -8,12 +8,12 @@ Bigbranch::Bigbranch()
 {
     _colbranch = 2 + rand()%2;
     _branch = new Branch[_colbranch];
-    _house = new House();
+   // _house = new House();
 }
 
 Bigbranch::~Bigbranch()
 {
-    delete _house;
+    //delete _house;
     delete[] _branch;
 }
 
